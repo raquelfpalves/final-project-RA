@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/47cb326dd1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Today</h1>
+                <ul style="list-style: none;">
+                    <li id="date"> </li>
+                </ul>
+                <p id="description"> </p>
+                <p>Let's get outside!</p>
+            </div>
+            <div class="col-6">
+                <h3>
+                    <i class="fas fa-sun">
+                    </i>
+                </h3>
+                <span class="temperature" id="temperature">
+                </span>
+                <span class=units">
+                    <a href="#" id="celsius-link">ºC</a> |
+                    <a href="#" id="fahrenheit-link">ºF</a>
+                </span>
+                <h3 id="city"> </h3>
+                <form id="search-form">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="search city" autocomplete="off"
+                                autofocus="on" id="search-text-input" />
+                        </div>
+                        <div class="col">
+                            <input type="submit" value="Go" />
+                        </div>
+                        <div id="current-location">
+                            <input type="submit" value="Current" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </form>
+
+        <br />
+        <div class="row">
+            <div class="col-6">
+                <h2>Later today</h2>
+                <div class="row">
+                    <div class="col">15:00</div>
+                    <i class="fas fa-sun"> </i>
+                    <div class="col">18:00</div>
+                    <i class="fas fa-sun"> </i>
+                </div>
+                <div class="row">
+                    <div class="col">16:00</div>
+                    <i class="fas fa-sun"> </i>
+                    <div class="col">19:00</div>
+                    <i class="fas fa-sun"> </i>
+                </div>
+                <div class="row">
+                    <div class="col">17:00</div>
+                    <i class="fas fa-cloud-sun"></i>
+                    <div class="col">20:00</div>
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <ul style="list-style: none;">
+                    <li>
+                        0% | chance of rain
+                    </li>
+                    <li>
+                        <span id="wind"> </span>
+                        | wind
+                    </li>
+                    <li>
+                        <span id="humidity">
+                        </span> %| humidity
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br />
+
+        <div class="week">
+            <div class="row">
+                <div class="col-2">
+                    MON
+                </div>
+                <div class="col-2">
+                    TUE
+                </div>
+                <div class="col-2">
+                    WED
+                </div>
+                <div class="col-2">
+                    THU
+                </div>
+                <div class="col-2">
+                    FRI
+                </div>
+                <div class="col-2">
+                    SAT
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <i class="fas fa-sun"> </i>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-sun"> </i>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-sun"> </i>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    22ºC
+                </div>
+                <div class="col-2">
+                    25ºC
+                </div>
+                <div class="col-2">
+                    20ºC
+                </div>
+                <div class="col-2">
+                    20ºC
+                </div>
+                <div class="col-2">
+                    26ºC
+                </div>
+                <div class="col-2">
+                    20ºC
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    18ºC
+                </div>
+                <div class="col-2">
+                    17ºC
+                </div>
+                <div class="col-2">
+                    14ºC
+                </div>
+                <div class="col-2">
+                    11ºC
+                </div>
+                <div class="col-2">
+                    13ºC
+                </div>
+                <div class="col-2">
+                    10ºC
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

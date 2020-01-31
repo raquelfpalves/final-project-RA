@@ -1,9 +1,9 @@
-.container {
+.weather-app {
+  padding: 20px;
+  max-width: 450px;
   font-family: "PT Sans", sans-serif;
   color: #515151;
   text-align: center;
-  padding: 20px;
-  width: 450px;
   border-radius: 20px;
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
@@ -56,8 +56,4 @@ h3 i {
 .units {
   position: relative;
   top: -34px;
-}
-
-.source {
-  margin-left: 500px;
 }

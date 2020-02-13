@@ -6,7 +6,6 @@ h1 {
   font-size: 40px;
   margin-bottom: 0;
   font-weight: 100;
-  line
 }
 
 h1,
@@ -15,6 +14,7 @@ h3,
 li,
 p {
   text-align: left;
+  text-transform: capitalize;
 }
 
 h3 {

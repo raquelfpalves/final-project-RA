@@ -3,6 +3,7 @@
   <head>
     <title>WeatherAPP</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
     <meta charset="UTF-8" />
     <link href="src/styles.css" />
     <link
@@ -11,10 +12,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/47cb326dd1.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto&display=swap"
       rel="stylesheet"
@@ -26,7 +23,7 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-6">
-            <h1>London</h1>
+            <h1 id="city"></h1>
           </div>
           <div class="col-6">
             <div class="weather-icon">
@@ -41,14 +38,14 @@
           <div class="col-6"><p>Friday 13:20</p></div>
           <div class="col-6">
             <div class="actual-temp">
-              <strong>28</strong>
+              <strong id="temperature"></strong>
               <span class="units">ºC | <a href="#">ºF</a></span>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
-            <p>Cloudy</p>
+            <p id="description">Cloudy</p>
           </div>
           <div class="col-6">
             <form>teste</form>
@@ -56,15 +53,8 @@
         </div>
         <div>
           <ul>
-            <li>
-              precipitation 0%
-            </li>
-            <li>
-              humidity: 75%
-            </li>
-            <li>
-              wind: 2km/h
-            </li>
+            <li>humidity: <span id="humidity"></span>%</li>
+            <li>wind: <span id="wind"></span> km/h</li>
           </ul>
         </div>
       </div>

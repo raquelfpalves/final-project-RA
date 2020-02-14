@@ -55,7 +55,15 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  alert("fahrenheit temp");
+}
+
 search("London");
 
 let form = document.querySelector("#search-form");
-document.addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

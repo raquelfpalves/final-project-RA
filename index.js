@@ -57,7 +57,6 @@ function handleSubmit(event) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  alert("fahrenheit temp");
 }
 
 search("London");

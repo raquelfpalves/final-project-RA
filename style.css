@@ -82,3 +82,12 @@ li {
   font-size: 14px;
   top: -18px;
 }
+
+.actual-temp .active {
+  color: #515151;
+  cursor: default;
+}
+
+.actual-temp .active:hover {
+  text-decoration: none;
+}

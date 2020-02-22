@@ -65,9 +65,7 @@ function displayForecast(response) {
         forecast.weather[0].icon
       }@2x.png"/>
       <div class="weather-forecast-temperature">
-       <strong>
        ${Math.round(forecast.main.temp_max)}º |
-       </strong> 
        ${Math.round(forecast.main.temp_min)}º
     </div>
  </div >
@@ -92,7 +90,6 @@ function handleSubmit(event) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
